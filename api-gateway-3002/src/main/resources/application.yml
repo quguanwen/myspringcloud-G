@@ -1,0 +1,15 @@
+server:
+  port: 3002
+
+spring:
+  application:
+    name: api-gateway
+
+eureka:
+  client:
+    serviceUrl.defaultZone: http://localhost:1001/eureka/
+
+# 增加超时配置默认两秒就降级了
+ribbon:
+  ReadTimeout: 10000
+  SocketTimeout: 60000

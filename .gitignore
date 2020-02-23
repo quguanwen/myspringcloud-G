@@ -1,0 +1,6 @@
+# Project exclude paths
+/api-gateway-3002/target/
+/conf-server-3001/target/
+/consumer-2002/target/
+/eureka-server-1001/target/
+/provider-2001/target/

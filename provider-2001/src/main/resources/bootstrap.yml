@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: provider-2001
+  #直接去配置中新拉配置
+  cloud:
+    config:
+      uri: http://localhost:3001/
+      label: master
+
+
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:1001/eureka/
+#    #注册到多个服务注册中心 eureka.client.serviceUrl.defaultZone=http://peer1:1001/eureka/,http://peer2:1002/eureka/
+#
