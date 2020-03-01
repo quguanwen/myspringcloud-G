@@ -39,6 +39,19 @@
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
+        <!--Spring Cloud Bus-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
+        <!--监控服务可用性-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>2.1.4.RELEASE</version>
+        </dependency>
+
         <!--JDK不兼容导致问题 ,应该用1.8我只有11-->
         <dependency>
             <groupId>javax.xml.bind</groupId>

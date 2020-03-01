@@ -9,9 +9,21 @@ spring:
       server:
         git:
           uri: https://github.com/quguanwen/Mylife/
+  rabbitmq:
+    host: 192.168.1.20
+    port: 5672
+    username: admin
+    password: 123456
 
 #需要把配置中心注册到eureka中
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:1001/eureka/
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: "*"

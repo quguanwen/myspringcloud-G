@@ -6,7 +6,18 @@ spring:
     config:
       uri: http://localhost:3001/
       label: master
+  rabbitmq:
+    host: 192.168.1.20
+    port: 5672
+    username: admin
+    password: 123456
 
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: "*"
 
 
 #eureka:
@@ -15,3 +26,4 @@ spring:
 #      defaultZone: http://localhost:1001/eureka/
 #    #注册到多个服务注册中心 eureka.client.serviceUrl.defaultZone=http://peer1:1001/eureka/,http://peer2:1002/eureka/
 #
+
