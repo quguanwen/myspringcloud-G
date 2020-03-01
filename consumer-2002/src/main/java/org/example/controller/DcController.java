@@ -2,6 +2,7 @@ package org.example.controller;
 
 import org.example.feignclient.FeignInvoke;
 import org.example.hystrixdemo.DcService;
+import org.example.streamtest.ReceiverService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactories;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -40,6 +41,7 @@ public class DcController {
     public String dcH(){
         return dcService.masterInvoke();
     }
+
 
 
 }
